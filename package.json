@@ -1,15 +1,28 @@
 {
   "name": "vue3-print-nb",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "scripts": {
     "dev": "vite",
-    "build": "vite build"
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/vue3-print-nb.umd.js",
+  "module": "./dist/vue3-print-nb.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/vue3-print-nb.es.js",
+      "require": "./dist/vue3-print-nb.umd.js"
+    }
   },
   "dependencies": {
-    "vue": "^3.0.4"
+    "vue": "^3.0.5"
   },
   "devDependencies": {
-    "vite": "^1.0.0-rc.13",
-    "@vue/compiler-sfc": "^3.0.4"
+    "@vitejs/plugin-vue": "^1.2.2",
+    "@vue/compiler-sfc": "^3.0.5",
+    "vite": "^2.3.0"
   }
 }
