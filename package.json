@@ -1,6 +1,6 @@
 {
   "name": "vue3-print-nb",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
