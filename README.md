@@ -292,7 +292,7 @@ export default {
     data() {
         return {
             printObj: {
-              asyncUrl (reslove) {
+              asyncUrl (reslove, vue) {
                 setTimeout(() => {
                   reslove('http://localhost:8080/')
                 }, 2000)
