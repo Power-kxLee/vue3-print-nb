@@ -2,7 +2,7 @@
  * @Author: lee
  * @Date: 2021-05-10 11:45:50
  * @LastEditors: lee
- * @LastEditTime: 2021-05-14 10:12:03
+ * @LastEditTime: 2021-05-14 10:33:51
  * @Description: file content
  */
 import Print from './printarea.js';
@@ -50,6 +50,7 @@ export default {
         standard: '', // 文档类型，默认是html5，可选 html5，loose，strict
         extraHead: binding.value.extraHead, // 附加在head标签上的额外标签,使用逗号分隔
         extraCss: binding.value.extraCss, // 额外的css连接，多个逗号分开
+        zIndex: binding.value.zIndex || 20002, // 预览窗口的z-index
         previewTitle: binding.value.previewTitle || '打印预览', // 打印预览的标题
         previewPrintBtnLabel: binding.value.previewPrintBtnLabel || '打印', // 打印预览的标题
         popTitle: binding.value.popTitle, // title的标题
